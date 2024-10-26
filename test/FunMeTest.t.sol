@@ -25,6 +25,7 @@ contract FundMeTest is Test {
 
     function testPriceFeedVersionIsAccurate() public {
         uint256 version = fundMe.getVersion();
+        console.log("testPriceFeedVersionIsAccurate:", version);
         assertEq(version, 4);
     }
 }
